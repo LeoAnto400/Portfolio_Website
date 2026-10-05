@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Metadata: encoding, responsive viewport, short description -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal portfolio of Leo Anto Sabu, B.Tech Information Technology student interested in AI engineering and backend systems.">
+  <title>Leo Anto Sabu | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Skip link for keyboard users -->
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- ===== Header with navigation (sticky) ===== -->
+  <header class="site-header">
+    <nav aria-label="Main navigation">
+      <ul class="nav-list">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ===== A. Profile and introduction ===== -->
+    <section id="home" class="section intro">
+      <div class="intro-photo">
+        <img src="images/profile.jpg" alt="Portrait of Leo Anto Sabu" width="260" height="260">
+      </div>
+      <div class="intro-text">
+        <h1>Leo Anto Sabu</h1>
+        <p class="title">B.Tech Information Technology Student</p>
+        <h3>
+          Hi, I'm Leo. I'm interested in <strong>AI engineering</strong> and
+          backend systems, and I enjoy building intelligent software
+          applications powered by LLMs, RAG systems and AI agents.
+        </h3>
+        <!-- Focus areas, taken from the About Me text -->
+        <ul class="tags focus-tags">
+          <li>AI Engineering</li>
+          <li>LLMs</li>
+          <li>RAG Systems</li>
+          <li>AI Agents</li>
+          <li>Backend Systems</li>
+        </ul>
+        <a class="button-link button-primary" href="#contact">Contact Me</a>      </div>
+    </section>
+
+    <!-- ===== B. About Me ===== -->
+    <section id="about" class="section">
+      <h2>About Me</h2>
+      <p>
+        I’m a Computer Science student with a strong interest in AI engineering,
+        backend systems, and building intelligent software applications. I’m
+        particularly interested in LLMs, RAG systems, AI agents, and the
+        engineering infrastructure behind AI-powered products.
+      </p>
+      <p>
+        Alongside AI, I enjoy working with backend technologies, APIs,
+        databases, and scalable system architectures. I’m currently deepening my
+        understanding of machine learning and modern LLM technologies while
+        strengthening my foundations in data structures, algorithms, and
+        software engineering.
+      </p>
+      <p>
+        I’m driven by building practical projects that combine AI with
+        real-world software systems, and I’m looking for opportunities where I
+        can learn from experienced engineers, contribute to meaningful
+        products, and grow as an AI/software engineer.
+      </p>
+    </section>
+
+    <!-- ===== C. Education ===== -->
+    <section id="education" class="section">
+      <h2>Education</h2>
+
+      <!-- Wrapper lets the table scroll sideways on small phones -->
+      <div class="table-wrapper" tabindex="0" role="region" aria-label="Education table, scrollable">
+        <table>
+          <caption>My educational qualification</caption>
+          <thead>
+            <tr>
+              <th scope="col">Qualification</th>
+              <th scope="col">Institution</th>
+              <th scope="col">Year / Duration</th>
+              <th scope="col"><abbr title="Cumulative Grade Point Average">CGPA</abbr></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">B.Tech, Information Technology</th>
+              <td>Manipal Institute of Technology, Manipal</td>
+              <td>Expected 2028</td>
+              <td>7.81</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Description list: label-value information -->
+      <h3>More Details</h3>
+      <dl class="details">
+        <dt>School</dt>
+        <dd>School of Computer Engineering</dd>
+        <dt>Relevant coursework</dt>
+        <dd>Data Structures &amp; Algorithms, Database Management Systems, Operating Systems, Computer Networks, Object-Oriented Programming, Software Engineering, Artificial Intelligence</dd>
+        <dt>Certification</dt>
+        <dd>The Complete Full-Stack Web Development Bootcamp (Udemy)</dd>
+      </dl>
+    </section>
+
+    <!-- ===== D. Skills ===== -->
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+      <div class="skill-groups">
+        <div class="skill-card">
+          <h3>Programming Languages</h3>
+          <ul class="tags">
+            <li>Java</li><li>C</li><li>C++</li><li>Python</li><li>SQL</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h3>Frameworks &amp; Libraries</h3>
+          <ul class="tags">
+            <li>React</li><li>Next.js</li><li>Node.js / Express</li><li>FastAPI</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h3>Databases &amp; Data</h3>
+          <ul class="tags">
+            <li>MySQL</li><li>ChromaDB (vector search)</li><li>OracleDB</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h3>Tools &amp; Platforms</h3>
+          <ul class="tags">
+            <li>Docker</li><li>Git</li><li>GitHub Actions (CI/CD)</li><li>JWT Auth</li>
+            <li>WebSockets</li><li>LangGraph</li><li>Gemini API</li>
+            <li>Jest / Supertest</li><li>pytest</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== E. Projects ===== -->
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <div class="project-grid">
+
+        <!-- Each project is a self-contained piece of content, so <article> fits -->
+        <article class="project-card">
+          <h3>GitHub Repository Intelligence Platform</h3>
+          <ul class="tags">
+            <li>Python</li><li>FastAPI</li><li>LangGraph</li><li>ChromaDB</li>
+            <li>Gemini API</li><li>Next.js</li><li>React</li><li>TypeScript</li>
+          </ul>
+          <ul class="project-points">
+            <li>Multi-agent RAG system that ingests any GitHub repository and answers natural-language questions about its codebase, using LangGraph to orchestrate retrieval, analysis, and response-generation agents.</li>
+            <li>AST-based code chunking pipeline that splits source files into semantically coherent segments, improving retrieval relevance over naive line/token-based splitting.</li>
+            <li>FastAPI backend with ingestion, query, and management endpoints, integrated with ChromaDB for vector search and the Gemini API for embeddings and LLM-based analysis.</li>
+            <li>WebSocket-based streaming for chat responses with automatic REST fallback, and a Next.js/React frontend with real-time chat and markdown/code rendering, backed by Zustand.</li>
+          </ul>
+          <a class="button-link" href="https://github.com/LeoAnto400/RepoIntelligence-Platform" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+        </article>
+
+        <article class="project-card">
+          <h3>Bank Management System</h3>
+          <ul class="tags">
+            <li>React</li><li>Node.js / Express</li><li>MySQL</li><li>Docker</li>
+          </ul>
+          <ul class="project-points">
+            <li>Full-stack banking simulation with account management, internal transfers, deposits/withdrawals, and loan origination/repayment with EMI calculation and interest/principal splitting.</li>
+            <li>ACID-correct money movement: every balance-changing operation runs in an SQL transaction with row-level locking, preventing race conditions on concurrent requests.</li>
+            <li>Defense-in-depth authentication with bcrypt password hashing, short-lived JWTs, role-based access control, and step-up confirmation on sensitive admin actions.</li>
+            <li>Database-level triggers that flag suspicious activity (rapid transactions, high-value transfers, repeated failed logins) into a fraud monitoring system.</li>
+            <li>Integration tests (Jest + Supertest) run in GitHub Actions CI, and the full stack is containerized with Docker Compose.</li>
+          </ul>
+          <a class="button-link" href="https://github.com/LeoAnto400/Bank-Management-System" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== F + G. Contact section doubles as the footer ===== -->
+  <footer id="contact" class="site-footer">
+    <div class="footer-inner">
+
+      <!-- Left side: heading and short message -->
+      <div class="footer-intro">
+        <h2>Contact Me</h2>
+        <p>
+          I'm looking for opportunities to learn from experienced engineers
+          and work on meaningful products. Send me an email or find me on
+          any of these platforms.
+        </p>
+      </div>
+
+      <!-- Right side: one card per link, with the address written out -->
+      <ul class="contact-cards">
+        <li>
+          <a class="contact-card" href="mailto:leoanto400@gmail.com">
+            <span class="card-icon">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+            </span>
+            <span class="card-text">
+              <span class="card-label">Email</span>
+              <span class="card-value">leoanto400@gmail.com</span>
+            </span>
+          </a>
+        </li>
+        <li>
+          <a class="contact-card" href="https://github.com/LeoAnto400" target="_blank" rel="noopener noreferrer">
+            <span class="card-icon">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+              </svg>
+            </span>
+            <span class="card-text">
+              <span class="card-label">GitHub</span>
+              <span class="card-value">github.com/LeoAnto400</span>
+            </span>
+          </a>
+        </li>
+        <li>
+          <a class="contact-card" href="https://linkedin.com/in/leo-anto-sabu-39b100338" target="_blank" rel="noopener noreferrer">
+            <span class="card-icon">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                <rect x="2" y="9" width="4" height="12"/>
+                <circle cx="4" cy="4" r="2"/>
+              </svg>
+            </span>
+            <span class="card-text">
+              <span class="card-label">LinkedIn</span>
+              <span class="card-value">linkedin.com/in/leo-anto-sabu-39b100338</span>
+            </span>
+          </a>
+        </li>
+        <li>
+          <a class="contact-card" href="https://leetcode.com/u/LoeLurker/" target="_blank" rel="noopener noreferrer">
+            <span class="card-icon">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                <polyline points="16 18 22 12 16 6"/>
+                <polyline points="8 6 2 12 8 18"/>
+              </svg>
+            </span>
+            <span class="card-text">
+              <span class="card-label">LeetCode</span>
+              <span class="card-value">leetcode.com/u/LoeLurker</span>
+            </span>
+          </a>
+        </li>
+      </ul>
+
+    </div>
+
+    <p class="copyright">&copy; <span id="year">2026</span> Leo Anto Sabu</p>
+  </footer>
+
+  <!-- Back to top button (shown by JavaScript after scrolling) -->
+  <button id="back-to-top" type="button" aria-label="Back to top">&uarr; Top</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
